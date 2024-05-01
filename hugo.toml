@@ -1,0 +1,37 @@
+baseURL = 'https://piotrooo.codes'
+languageCode = 'en-us'
+title = "piotrooo's codes"
+theme = 'archie'
+copyright = '© Piotr Olaszewski'
+
+paginate = 5
+
+[params]
+mode = 'toggle'
+useCDN = false
+subtitle = "Backend Tech Lead's diary"
+
+[[params.social]]
+name = 'GitHub'
+icon = 'github'
+url = 'https://github.com/piotrooo'
+
+[[params.social]]
+name = 'Twitter'
+icon = 'twitter'
+url = 'https://twitter.com/_piotrooo'
+
+[[menu.main]]
+name = 'Home'
+url = '/'
+weight = 1
+
+[[menu.main]]
+name = 'All posts'
+url = '/posts'
+weight = 2
+
+[[menu.main]]
+name = 'About'
+url = '/about'
+weight = 3
