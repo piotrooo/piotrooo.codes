@@ -25,6 +25,11 @@ name = 'Twitter'
 icon = 'twitter'
 url = 'https://twitter.com/_piotrooo'
 
+[[params.social]]
+name = 'LinkedIn'
+icon = 'linkedin'
+url = 'https://www.linkedin.com/in/piotrooo/'
+
 [[menu.main]]
 name = 'Home'
 url = '/'
