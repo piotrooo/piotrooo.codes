@@ -6,6 +6,10 @@ copyright = '© Piotr Olaszewski'
 
 paginate = 5
 
+[services]
+  [services.googleAnalytics]
+    ID = 'G-6HS4BEX4CF'
+
 [params]
 mode = 'toggle'
 useCDN = false
