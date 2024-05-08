@@ -285,3 +285,64 @@ cannot determine the build artifact file.
 [//]: # (todo translations)
 
 ## Deploy to Azure
+
+Before you try to deploy something, you must be sure that you are connected to the correct Azure subscription.
+You can check it by:
+
+{{< figure src="/images/2024/05/01/8-azure-account-show.png" title="Figure 8. Show current Azure account" >}}
+
+{{< callout >}}
+To log in to the Azure and set Azure subscription, you may need to run the following commands:
+
+1. `az login`
+2. `az account set --subscription <subscription-id>`
+
+{{< /callout >}}
+
+To deploy something, we need to make some adjustments to the _Azure Functions Plugin for Gradle_.
+
+```groovy
+azurefunctions {
+    resourceGroup = 'PO'
+    appName = 'uppercase'
+    region = 'westeurope'
+    runtime {
+        os = 'linux'
+        javaVersion = '17'
+    }
+    auth {
+        type = 'azure_cli'
+    }
+    appSettings {
+        FUNCTIONS_EXTENSION_VERSION = '~4'
+    }
+}
+```
+
+With this configuration, the plugin will create all necessary objects in the Azure Resource Group, which is called `PO`
+in our sample.
+
+The Gradle plugin provides us with a task called `azureFunctionsDeploy`. Let's try it by calling:
+
+```shell
+./gradlew clean azureFunctionsDeploy
+```
+
+{{< figure src="/images/2024/05/01/9-azure-deploy.png" title="Figure 9. Successfully deployed Azure Functions" >}}
+
+Let’s take a closer look at what was created on Azure:
+
+{{< figure src="/images/2024/05/01/10-azure-created-resources.png" title="Figure 10. Created resources" >}}
+
+The _Azure Functions Plugin for Gradle_ handled everything for us. It created a `Function App` named _uppercase_ and
+also set up the necessary `Storage account` for internal files. Additionally, it created `Application Insight`,
+providing many features to enhance the performance, reliability, and quality of our application.
+
+Now it's demo time! Let's try converting something to uppercase, but this time — **using Azure Functions**. In the
+generated output, we can see an endpoint to make a request:
+
+{{< figure src="/images/2024/05/01/11-running-on-azure.png" title="Figure 11. Uppercased on Azure" >}}
+
+The generated log statements are also available in the Azure Portal:
+
+{{< figure src="/images/2024/05/01/12-azure-logs.png" title="Figure 12. Azure Functions logs" >}}
