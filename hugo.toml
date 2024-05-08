@@ -14,6 +14,7 @@ paginate = 5
 mode = 'toggle'
 useCDN = false
 subtitle = "Backend Tech Lead's diary"
+customcss = ['/css/piotrooo.css']
 
 [[params.social]]
 name = 'GitHub'

@@ -1,0 +1,25 @@
+.highlight pre code[class=language-javaScript]::before,
+.highlight pre code[class="language-java"]::before {
+    content: "java";
+    background: #e11e22;
+    color: white;
+}
+
+.highlight pre code[class=language-javaScript]::before,
+.highlight pre code[class="language-groovy"]::before {
+    content: "groovy";
+    background: #4298b8;
+    color: white;
+}
+
+figure img {
+    max-height: none;
+}
+
+.callout-inner code {
+    color: #232333;
+}
+
+.callout p {
+    font-family: inherit;
+}
