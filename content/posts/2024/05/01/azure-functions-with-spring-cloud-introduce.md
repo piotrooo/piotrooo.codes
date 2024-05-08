@@ -346,3 +346,8 @@ generated output, we can see an endpoint to make a request:
 The generated log statements are also available in the Azure Portal:
 
 {{< figure src="/images/2024/05/01/12-azure-logs.png" title="Figure 12. Azure Functions logs" >}}
+
+---
+
+The project which covers this article is available on
+the [GitHub repository](https://github.com/piotrooo/piotrooo.codes-samples/tree/main/azure-functions/azure-functions-uppercase).
