@@ -349,5 +349,5 @@ The generated log statements are also available in the Azure Portal:
 
 ---
 
-The project which covers this article is available on
+The code which covers this article is available on
 the [GitHub repository](https://github.com/piotrooo/piotrooo.codes-samples/tree/main/azure-functions/azure-functions-uppercase).
