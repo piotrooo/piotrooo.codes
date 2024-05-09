@@ -50,7 +50,7 @@ within the Azure Functions ecosystem.
 {{< /callout >}}
 
 Here is the information about
-all [supported versions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-java?tabs=bash%2Cconsumption#supported-versions).
+all [supported Java versions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-java?tabs=bash%2Cconsumption#supported-versions).
 
 As a first step we need to add the `spring-cloud-function-adapter-azure` dependency. This allows us to integrate our
 codebase with the Azure Functions.
@@ -221,8 +221,8 @@ the [FunctionClassUtils](https://github.com/spring-cloud/spring-cloud-function/b
 class.
 
 If we examine
-the `FunctionClassUtils.getStartClass()` [method](https://github.com/spring-cloud/spring-cloud-function/blob/main/spring-cloud-function-context/src/main/java/org/springframework/cloud/function/utils/FunctionClassUtils.java#L53-L61),
-in the Javadoc, we find the following description:
+the `FunctionClassUtils.getStartClass()` [method](https://github.com/spring-cloud/spring-cloud-function/blob/main/spring-cloud-function-context/src/main/java/org/springframework/cloud/function/utils/FunctionClassUtils.java#L53-L61)
+— in the Javadoc — we find the following description:
 
 ```
 /**
@@ -339,13 +339,17 @@ also set up the necessary `Storage account` for internal files. Additionally, it
 providing many features to enhance the performance, reliability, and quality of our application.
 
 Now it's demo time! Let's try converting something to uppercase, but this time — **using Azure Functions**. In the
-generated output, we can see an endpoint to make a request:
+previously generated output, we can see an endpoint to make a request:
 
 {{< figure src="/images/2024/05/01/11-running-on-azure.png" title="Figure 11. Uppercased on Azure" >}}
 
 The generated log statements are also available in the Azure Portal:
 
 {{< figure src="/images/2024/05/01/12-azure-logs.png" title="Figure 12. Azure Functions logs" >}}
+
+We carried out our mission! The function is up and running, and what is more, we don't even create any virtual machine,
+Kubernetes cluster or any of the 'infrastructure' stuff. It's awesome! That's the power of the Azure Functions and
+general serverless programming.
 
 ---
 
