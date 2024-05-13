@@ -1,0 +1,47 @@
+{{ $title := $.LinkTitle }}
+{{ $font := resources.GetRemote "http://fonts.gstatic.com/s/robotomono/v4/N4duVc9C58uwPiY8_59Fz8CNfqCYlB_eIx7H1TVXe60.ttf" }}
+{{ $img := resources.Get "images/template.jpg"}}
+
+{{ $img = $img.Filter (images.Text $title (dict
+"color" "#232333"
+"size" 60
+"linespacing" 2
+"x" 100
+"y" 150
+"font" $font
+))}}
+
+{{ $img = $img.Filter (images.Text "Piotr Olaszewski" (dict
+"color" "#f1f5f9"
+"size" 30
+"linespacing" 2
+"x" 170
+"y" 485
+"font" $font
+))}}
+
+{{ $img = $img.Filter (images.Text "piotrooo.codes" (dict
+"color" "#232333"
+"size" 20
+"linespacing" 2
+"x" 1000
+"y" 570
+"font" $font
+))}}
+
+{{ if ne .Type "page" }}
+    {{ if gt .Params.tags 0 }}
+        {{ $tags := delimit .Params.tags ", " }}
+        {{ $tags := string $tags }}
+        {{ $img = $img.Filter (images.Text $tags (dict
+        "color" "#cbd5e1"
+        "size" 20
+        "linespacing" 2
+        "x" 100
+        "y" 50
+        "font" $font
+        ))}}
+    {{ end }}
+{{ end }}
+
+{{ return $img }}
