@@ -1,7 +1,7 @@
 ---
 title: 'Azure Functions With Spring Cloud - Introduce'
 date: 2024-05-01
-draft: true
+draft: false
 url: 'azure-functions-with-spring-cloud-introduce'
 description: Create, run locally and deploy very first Azure Functions using Spring Cloud.
 tldr: |
