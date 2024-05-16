@@ -282,8 +282,6 @@ The `GradleProjectUtils` [class](https://github.com/microsoft/azure-gradle-plugi
 in the _Azure Functions Plugin for Gradle_ uses a Gradle `version` property. Without this defined property, the plugin
 cannot determine the build artifact file.
 
-[//]: # (todo translations)
-
 ## Deploy to Azure
 
 Before you try to deploy something, you must be sure that you are connected to the correct Azure subscription.
@@ -348,8 +346,8 @@ The generated log statements are also available in the Azure Portal:
 {{< figure src="/images/2024/05/01/12-azure-logs.png" title="Figure 12. Azure Functions logs" >}}
 
 We carried out our mission! The function is up and running, and what is more, we don't even create any virtual machine,
-Kubernetes cluster or any of the 'infrastructure' stuff. It's awesome! That's the power of the Azure Functions and
-general serverless programming.
+Kubernetes cluster, or any of the 'infrastructure' stuff. It's awesome! That's the power of the Azure Functions and
+general **serverless** programming.
 
 ---
 
