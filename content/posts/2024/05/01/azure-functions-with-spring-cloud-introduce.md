@@ -1,5 +1,5 @@
 ---
-title: 'Azure Functions With Spring Cloud - Introduce'
+title: 'Azure Functions with Spring Cloud — Introduction'
 date: 2024-05-01
 draft: false
 url: 'azure-functions-with-spring-cloud-introduce'
