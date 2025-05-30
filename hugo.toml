@@ -3,8 +3,10 @@ languageCode = 'en-us'
 title = "piotrooo's codes"
 theme = 'archie'
 copyright = '© Piotr Olaszewski'
+disqusShortname = ""
 
-paginate = 5
+[pagination]
+pagerSize = 5
 
 [services]
   [services.googleAnalytics]
@@ -13,22 +15,27 @@ paginate = 5
 [params]
 mode = 'toggle'
 useCDN = false
-subtitle = "Backend Tech Lead's diary"
+subtitle = "Software Architect's diary"
 customcss = ['/css/piotrooo.css']
 
 [[params.social]]
 name = 'GitHub'
-icon = 'github'
+icon = 'simple:github'
 url = 'https://github.com/piotrooo'
 
 [[params.social]]
 name = 'Twitter'
-icon = 'twitter'
+icon = 'simple:bluesky'
+url = 'https://bsky.app/profile/piotrooo.bsky.social'
+
+[[params.social]]
+name = 'Twitter'
+icon = 'simple:x'
 url = 'https://twitter.com/_piotrooo'
 
 [[params.social]]
 name = 'LinkedIn'
-icon = 'linkedin'
+icon = 'simple:linkedin'
 url = 'https://www.linkedin.com/in/piotrooo/'
 
 [[menu.main]]
