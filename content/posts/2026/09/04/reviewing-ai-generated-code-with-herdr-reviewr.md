@@ -1,7 +1,7 @@
 ---
 title: 'Reviewing AI-Generated Code with herdr-reviewr'
 date: 2026-09-03
-draft: true
+draft: false
 url: 'reviewing-ai-generated-code-with-herdr-reviewr'
 description: Review an AI coding agent's diff, attach feedback to exact lines, and send it back without leaving Herdr.
 tldr: |
