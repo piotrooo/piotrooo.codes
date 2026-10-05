@@ -17,7 +17,7 @@ Jev is not a chat model. You give it some state, ask typed questions about that 
 
 I wanted to understand where that fits in a real Java application, so I built a small dependency-review tool with Spring AI and Jev.
 
-![Jev and Spring AI: from context to typed decisions](/images/jev-spring-ai-hero.png)
+{{< figure src="/images/2026/10/05/1-hero.png" title="Figure 1. Hero" >}}
 
 ## Watch the video
 
@@ -66,7 +66,7 @@ That is the gap I wanted to explore.
 
 The tool is intentionally small.
 
-![Git to Spring AI to Jev to Java flow](/images/jev-spring-ai-flow.png)
+{{< figure src="/images/2026/10/05/2-flow.png" title="Figure 2. Flow" >}}
 
 The flow is:
 
