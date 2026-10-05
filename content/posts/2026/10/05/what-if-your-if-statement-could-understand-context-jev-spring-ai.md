@@ -23,7 +23,7 @@ I wanted to understand where that fits in a real Java application, so I built a 
 
 I also recorded the complete walkthrough, including the real pull request and the CLI output.
 
-{{< youtube https://youtu.be/-PQjAMT3H18 >}}
+{{< youtube -PQjAMT3H18 >}}
 
 ## The example
 
