@@ -24,9 +24,9 @@ I wanted to understand where that fits in a real Java application, so I built a 
 I also recorded the complete walkthrough, including the real pull request and the CLI output.
 
 <!-- Replace YOUTUBE_VIDEO_ID before publishing -->
-{{< youtube YOUTUBE_VIDEO_ID >}}
+{{< youtube [YOUTUBE_VIDEO_ID](https://youtu.be/-PQjAMT3H18) >}}
 
-[Watch it on YouTube](https://youtu.be/YOUTUBE_VIDEO_ID)
+[Watch it on YouTube]([https://youtu.be/YOUTUBE_VIDEO_ID](https://youtu.be/-PQjAMT3H18))
 
 ## The example
 
@@ -567,12 +567,12 @@ Only after that would I consider using some of these results in CI.
 The full working example should live in a public repository and match the code shown in this article.
 
 <!-- Replace before publishing -->
-- **Example project:** TODO_REPOSITORY_URL
+- **Example project:** https://github.com/piotrooo/piotrooo.codes-samples/tree/main/jev/dependency-review
 - **Jev documentation:** https://docs.typesafe.ai/
 - **Spring AI TypeSafe:** https://github.com/spring-ai-community/spring-ai-typesafe
 - **Spring AI TypeSafe docs:** https://spring-ai-community.github.io/spring-ai-typesafe/latest/
 - **Asterisk Java PR #786:** https://github.com/asterisk-java/asterisk-java/pull/786
-- **Video:** https://youtu.be/YOUTUBE_VIDEO_ID
+- **Video:** [https://youtu.be/YOUTUBE_VIDEO_ID](https://youtu.be/-PQjAMT3H18)
 
 For me, the interesting part is not that AI can write another dependency review.
 
