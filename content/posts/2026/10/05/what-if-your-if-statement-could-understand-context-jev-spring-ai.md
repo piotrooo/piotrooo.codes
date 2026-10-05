@@ -569,7 +569,7 @@ The full working example should live in a public repository and match the code s
 - **Spring AI TypeSafe:** https://github.com/spring-ai-community/spring-ai-typesafe
 - **Spring AI TypeSafe docs:** https://spring-ai-community.github.io/spring-ai-typesafe/latest/
 - **Asterisk Java PR #786:** https://github.com/asterisk-java/asterisk-java/pull/786
-- **Video:** [https://youtu.be/YOUTUBE_VIDEO_ID](https://youtu.be/-PQjAMT3H18)
+- **Video:** https://youtu.be/-PQjAMT3H18
 
 For me, the interesting part is not that AI can write another dependency review.
 
